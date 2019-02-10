@@ -1,0 +1,42 @@
+.form_box{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.form_box input{
+    width: 30%;
+    height: 60px;
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: 'BPG Algeti';
+
+}
+
+.form_box button{
+    width: 30%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: orangered;
+    font-family: 'BPG Algeti';
+
+}
+
+.msg{
+    font-family: 'BPG Algeti';
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+
+.error{
+    font-family: 'BPG Algeti';
+    font-size: 20px;
+    color: red;
+
+}
