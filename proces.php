@@ -12,11 +12,17 @@ if(isset($_POST['swavleba'])){
         array_push($errors,'პასუხის ველი ცარიელია');
     }
 
+    $sql = "SELECT * FROM naswavli WHERE shekitxva='$shekitxva'";
+    $res = mysqli_query($con,$sql);
+    if(mysqli_num_rows($res)){
+        array_push($errors,'ესეთი შეკითხვა უკვე არსებობს !!!');
+    }
+
 
     if(count($errors) == 0 ){
         $sql = "INSERT INTO naswavli (shekitxva,pasuxi) VALUES ('$shekitxva','$pasuxi')";
         if(mysqli_query($con,$sql)){
-            $smg = "წარმატებით ისწავლა";
+            $msg = "წარმატებით ისწავლა<br><img src='img/corect.gif' style='width: 60px; margin-top: 5px;'>";
         }
     }
 }

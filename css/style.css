@@ -1,20 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url("../img/2back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    width: auto;
+    height: 70px;
+    background-color: #563d7c;
+}
+
+.header a{
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-family: 'BPG Mrgvlovani Caps';
+
+}
+
+
 .form_box{
+    padding-top: 3%;
+    margin: auto;
+    width: 700px;
+    height: 550px;
+    background-color: rgba(0,0,0,0.8);
     text-align: center;
     margin-top: 10%;
 }
 
 .form_box input{
-    width: 30%;
-    height: 60px;
+    width: 80%;
+    height: 70px;
     margin-top: 10px;
     padding-left: 10px;
     font-size: 17px;
     font-family: 'BPG Algeti';
+    border: none;
+    outline: none;
 
 }
 
 .form_box button{
-    width: 30%;
+    width: 80%;
     height: 50px;
     margin-top: 10px;
     font-size: 17px;
@@ -26,10 +63,20 @@
 
 }
 
+.naswavli{
+    color: white;
+    font-size: 21px;
+    margin-top: 10px;
+    font-family: 'BPG Algeti';
+
+}
+
+
 .msg{
     font-family: 'BPG Algeti';
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
+    color: white;
 
 }
 
